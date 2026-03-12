@@ -1,0 +1,268 @@
+
+.open-sans-normal {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.header{
+    background-image: url('../images/developer.png'),url('../images/header_bg.png');
+   background-repeat: no-repeat;
+   background-position: top left,bottom right ;
+  
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 100px;
+}
+
+.nav-title{
+    font-weight:bolder;
+    font-size: 45px;
+}
+
+.nav-title-color{
+    color: #FD6E0A;
+}
+
+nav ul{
+    display:flex;
+   align-items: center;
+    
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 18px;
+}
+
+nav li a{
+    text-decoration: none;
+}
+
+/* shared style start */
+.dark-2{
+    color: #474747;
+}
+.section-title{
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+}
+
+.section-description{
+    font-size: 18px;
+    color: #757575;
+}
+
+.secondary-bgcolor{
+    background-color:#FFF8F3;
+}
+
+.btn-prymary{
+    background-color: #FD6E0A;
+    color:#FFFFFF;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 18px 30px;
+    border: none;
+}
+
+/* shared style end */
+.banner{
+    display: flex;
+     justify-content: space-between; 
+     margin: 0px 20px 0px 213px;
+}
+
+.write-self{
+    height:286 ;
+   max-width:585;
+}
+
+.banner-gretting{
+    font-size: 45px;
+    font-weight: 400;
+    color: #474747;
+}
+
+.banner-title{
+     font-size: 85px;
+    font-weight:bold;
+    color: #474747;
+}
+
+.banner-profile-picture{
+    height:676px ;
+    width: 584px;
+}
+
+
+/* main styles */
+main{
+    max-width: 1140px;
+    margin: 0px auto;
+
+    }
+.main section{
+     margin-top: 90px;
+}
+/* about start */
+.about{
+    border-radius: 10px;
+      padding: 130px 150px;
+      text-align: center;
+      margin-top: 90px;
+}
+.items{
+    display: flex;
+    justify-content:space-around;
+}
+
+.item-description{
+    font-size: 20px;
+    font-weight: bold;
+}
+.item-title{
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.skills-section{
+    text-align:center;
+   
+}
+
+ .skills-contnair{ 
+    display: flex;
+    gap: 24px;
+     padding: 33px;
+      
+}
+
+.box-shado{
+      box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.6);
+      border-radius: 5px;
+}
+
+
+/* resume section container */
+.resume-contener{
+    display: flex;
+    gap: 25px;
+}
+
+.resume-column-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #474747;
+}
+.exprience-title{
+    font-size: 25px;
+    font-weight: bold;
+    color: #474747 ;
+}
+.exprience-sub-title{
+    font-size: 20px;
+    font-weight:lighter;
+}
+.exprience-description{
+    font-size: 16px;
+    color: #757575;
+}
+
+.resume-download-cv{
+    border-radius:10px;
+    margin-top: 50px;
+}
+
+/* footer section */
+footer{
+    display: flex;
+    gap: 150px;
+    margin-top: 100px;
+    background-color: #FFF8F3;
+    padding: 130px 200px;
+    
+}
+.footer-column{
+    width: 50%;
+    
+}
+.social-links a{
+    margin-right: 25px;
+}
+.contact input[type="text"],input[type="email"],textarea{
+    display: block;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    padding: 18px 30px;
+    color: #757575;
+    font-size: 16px;
+    font-weight: normal;
+    border: none;
+    width: 100%;
+}
+
+.footer-btn-prymary{
+    color: #FFFFFF;
+}
+
+.footer-btn-prymary{
+   
+}
+
+/* responsive media quairy */
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .skills-contnair{
+        flex-direction: column;
+    }
+
+    .resume-contener,footer,  .items,.banner,nav,nav ul{
+        flex-direction: column;
+    }
+    footer{
+        padding: 20px;
+        margin: 20px;
+    }
+   
+    .footer-column{
+        width: 100%;
+    }
+    .contact input[type="text"],input[type="email"],textarea{
+        width: calc( 100% - 40px);
+    }
+    .about{
+        padding: 0px;
+    }
+    .banner{
+        margin: 20px;
+    }
+   .banner-profile-picture{
+   width: 100%;
+   }
+   .btn-prymary{
+    margin-bottom: 5px;
+   }
+    
+     nav ul li{
+        margin-bottom: 20px;
+     }
+}
+
+@media screen and (min-width:577px) and (max-width:992px){
+    .banner{
+   flex-direction: column;
+   }
+}
